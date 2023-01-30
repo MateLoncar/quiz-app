@@ -3,15 +3,22 @@ h1 {
   text-align: center;
   top: 0;
 }
+.home-page {
+  overflow: hidden;
+}
 
+body {
+  text-align: center;
+}
 .question-card {
   position: relative;
   text-align: center;
-  width: 300px;
-  height: 200px;
+  width: 50%;
+  height: 300px;
   border: 2px solid black;
-  margin: auto;
+  margin: 30px;
   padding: 10px;
+  bottom: 30px;
 }
 .question {
   margin: 10px;
@@ -22,17 +29,17 @@ button {
 }
 
 .tags {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  justify-content: space-around;
 }
-
 .html {
   position: absolute;
   bottom: 0;
 }
 li {
+  list-style-type: none;
   float: left;
   margin: 5px;
   padding: 5px;
@@ -54,8 +61,8 @@ li {
 .navbar-div {
   position: fixed;
   bottom: 0;
-  background-color: lightcyan;
-  height: 10%;
+  background-color: gray;
+  height: 8%;
   width: 100%;
 }
 
@@ -64,4 +71,28 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.bookmark {
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.home {
+  width: 30px;
+  height: 30px;
+}
+.bookmark-footer {
+  width: 30px;
+  height: 30px;
+  bottom: 10px;
+  overflow: hidden;
+}
+
+.profile {
+  width: 30px;
+  height: 30px;
 }
