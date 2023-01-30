@@ -1,3 +1,10 @@
+.home-page {
+  width: 400px;
+  height: 600px;
+  border: 1px solid black;
+  margin: 5em auto;
+  position: relative;
+}
 h1 {
   border: 1px solid black;
   text-align: center;
@@ -28,10 +35,6 @@ button {
   overflow: hidden;
 }
 
-.html {
-  position: absolute;
-  bottom: 0;
-}
 li {
   float: left;
   margin: 5px;
@@ -39,6 +42,7 @@ li {
   border: 1px solid black;
   background-color: silver;
   border-radius: 20%;
+  position: absolute;
   bottom: 0;
 }
 
@@ -50,18 +54,4 @@ li {
 .flexbox {
   position: absolute;
   left: 20%;
-}
-.navbar-div {
-  position: fixed;
-  bottom: 0;
-  background-color: lightcyan;
-  height: 10%;
-  width: 100%;
-}
-
-.navbar-item-list {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
