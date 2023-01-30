@@ -1,5 +1,7 @@
 h1 {
-  border: 1px solid black;
+  border: 1.5px solid blue;
+  border-radius: 3px;
+  background-color: lightskyblue;
   text-align: center;
   top: 0;
 }
