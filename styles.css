@@ -1,38 +1,61 @@
+header {
+  background-color: navy;
+  color: white;
+  margin: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 h1 {
-  border: 1px solid black;
+  margin: 0;
+}
+
+.home-page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 0 60px 0;
+}
+
+body {
   text-align: center;
-  top: 0;
+  margin: 0px;
 }
 
 .question-card {
   position: relative;
-  text-align: center;
-  width: 300px;
-  height: 200px;
-  border: 2px solid black;
-  margin: auto;
+  width: 50%;
+  height: 250px;
+  border: 2px solid navy;
+  margin: 30px;
   padding: 10px;
 }
+
 .question {
   margin: 10px;
 }
+
 button {
   padding: 5px;
   margin: 30px;
 }
 
 .tags {
-  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  justify-content: space-around;
 }
-
 .html {
   position: absolute;
   bottom: 0;
 }
 li {
+  list-style-type: none;
   float: left;
   margin: 5px;
   padding: 5px;
@@ -54,9 +77,13 @@ li {
 .navbar-div {
   position: fixed;
   bottom: 0;
-  background-color: lightcyan;
-  height: 10%;
+  background-color: gray;
+  height: 8%;
   width: 100%;
+}
+
+.hide-answer {
+  display: none;
 }
 
 .navbar-item-list {
@@ -64,4 +91,29 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.bookmark-icon {
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  background-color: white;
+}
+
+.home {
+  width: 30px;
+  height: 30px;
+}
+.bookmark-footer {
+  width: 30px;
+  height: 30px;
+  bottom: 10px;
+  overflow: hidden;
+}
+.navy-color {
+  color: navy;
+}
+.profile {
+  width: 30px;
+  height: 30px;
 }
