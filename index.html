@@ -5,19 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/dde8d757b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js" defer></script>
     <title>Quiz</title>
   </head>
-  <body>
+  <body data-js="body">
+    <header><h1>Mate's Quiz App</h1></header>
     <div class="home-page">
-      <header><h1>Quiz App</h1></header>
       <div class="question-card">
+        <i
+          class="bookmark-icon fa-2x fa-regular navy-color fa-bookmark"
+          data-js="bookmark-icon"
+        ></i>
+
         <div class="question">What property flips the axes in flexbox?</div>
 
         <div class="show-answer">
-          <button class="answerbtn" onclick="revealAnswersFunction(this)">
-            Show answer
-          </button>
-          <div class="show-answer">flexbox</div>
+          <button class="answerbtn" data-js="show-answer">Show answer</button>
+          <div class="show-answer" data-js="answer-element">flexbox</div>
         </div>
 
         <ul class="tags">
@@ -25,41 +33,6 @@
           <li class="flexbox">#flexbox</li>
           <li class="css">#css</li>
         </ul>
-        <img src="bookmark.png" class="bookmark" alt="bookmark" />
-      </div>
-      <div class="question-card">
-        <div class="question">What property flips the axes in flexbox?</div>
-
-        <div class="show-answer">
-          <button class="answerbtn" onclick="revealAnswersFunction(this)">
-            Show answer
-          </button>
-          <div class="show-answer">flexbox</div>
-        </div>
-
-        <ul class="tags">
-          <li class="html">#html</li>
-          <li class="flexbox">#flexbox</li>
-          <li class="css">#css</li>
-        </ul>
-        <img src="bookmark.png" class="bookmark" alt="bookmark" />
-      </div>
-      <div class="question-card">
-        <div class="question">What property flips the axes in flexbox?</div>
-
-        <div class="show-answer">
-          <button class="answerbtn" onclick="revealAnswersFunction(this)">
-            Show answer
-          </button>
-          <div class="show-answer">flexbox</div>
-        </div>
-
-        <ul class="tags">
-          <li class="html">#html</li>
-          <li class="flexbox">#flexbox</li>
-          <li class="css">#css</li>
-        </ul>
-        <img src="bookmark.png" class="bookmark" alt="bookmark" />
       </div>
     </div>
 
@@ -67,17 +40,24 @@
       <nav class="navbar-div">
         <ul class="navbar-item-list">
           <li>
-            <img src="home.png" class="home" alt="home" />
+            <a href="#"
+              ><i class="navy-color fa-solid fa-2x fa-house current-page"></i
+            ></a>
           </li>
           <li>
-            <img
-              src="bookmark.png"
-              class="bookmark-footer"
-              alt="bookmark-footer"
-            />
+            <a href="/components/html/bookmark.html"
+              ><i class="navy-color fa-solid fa-2x fa-bookmark"></i
+            ></a>
           </li>
           <li>
-            <img src="profile.jpeg" class="profile" alt="profile" />
+            <a href="/components/html/form.html">
+              <i class="navy-color fa-solid fa-2x fa-circle-plus"></i>
+            </a>
+          </li>
+          <li>
+            <a href="/components/html/profile.html"
+              ><i class="navy-color fa-solid fa-2x fa-circle-user"></i
+            ></a>
           </li>
         </ul>
       </nav>

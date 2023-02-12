@@ -1,30 +1,44 @@
-h1 {
-  border: 1.5px solid blue;
-  border-radius: 3px;
-  background-color: lightskyblue;
-  text-align: center;
-  top: 0;
+header {
+  background-color: navy;
+  color: white;
+  margin: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+h1 {
+  margin: 0;
+}
+
 .home-page {
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 30px 0 60px 0;
 }
 
 body {
   text-align: center;
+  margin: 0px;
 }
+
 .question-card {
   position: relative;
-  text-align: center;
   width: 50%;
-  height: 300px;
-  border: 2px solid black;
+  height: 250px;
+  border: 2px solid navy;
   margin: 30px;
   padding: 10px;
-  bottom: 30px;
 }
+
 .question {
   margin: 10px;
 }
+
 button {
   padding: 5px;
   margin: 30px;
@@ -68,6 +82,10 @@ li {
   width: 100%;
 }
 
+.hide-answer {
+  display: none;
+}
+
 .navbar-item-list {
   list-style-type: none;
   display: flex;
@@ -75,12 +93,11 @@ li {
   align-items: center;
 }
 
-.bookmark {
-  width: 30px;
-  height: 40px;
+.bookmark-icon {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: -15px;
+  right: -10px;
+  background-color: white;
 }
 
 .home {
@@ -93,7 +110,9 @@ li {
   bottom: 10px;
   overflow: hidden;
 }
-
+.navy-color {
+  color: navy;
+}
 .profile {
   width: 30px;
   height: 30px;
