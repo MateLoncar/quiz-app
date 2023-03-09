@@ -34,3 +34,36 @@ function inputCounter(remainingCharacters, event, limit) {
     remainingCharacters.style.color = "red";
   } else remainingCharacters.style.color = "black";
 }
+
+const tagInput = document.querySelector('[data-js="tags"]');
+const button = document.querySelector('[data-js="submit-button"]');
+const main = document.querySelector('[data-js="main"]');
+const form = document.querySelector('[data-js="form"]');
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const formData = new FormData(event.target);
+  const data = Object.fromEntries(formData);
+
+  const newCard = document.createElement("article");
+  const newQuestion = document.createElement("h2");
+  const newCardButton = document.createElement("button");
+  const newAnswer = document.createElement("p");
+  const newTag = document.createElement("p");
+
+  newQuestion.textContent = questionInput.value;
+  newCardButton.textContent = "Show Answer";
+  newAnswer.textContent = answerInput.value;
+  newTag.textContent = tagInput.value;
+
+  newCardButton.classList.add("button_show_answer");
+
+  newCard.append(newQuestion);
+  newCard.append(newCardButton);
+  newCard.append(newAnswer);
+  newCard.append(newTag);
+  newCard.classList.add("question-card");
+  main.append(newCard);
+
+  event.target.reset();
+});

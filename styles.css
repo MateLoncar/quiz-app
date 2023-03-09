@@ -35,13 +35,23 @@ body {
   padding: 10px;
 }
 
+.footer-div {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  flex-wrap: wrap;
+  background-color: var(--secondary-color);
+  height: 10vh;
+  width: 100vw;
+  justify-content: space-around;
+}
 .question {
   margin: 10px;
 }
 
 button {
   padding: 5px;
-  margin: 30px;
+  margin: 40px;
 }
 
 .tags {
@@ -119,12 +129,13 @@ li {
 }
 
 /* style for new questions */
-
+main {
+  margin-bottom: 100px;
+}
 form {
   display: flex;
   flex-direction: column;
   width: 80%;
-  height: 500px;
   align-items: center;
   gap: 30px;
   margin-top: 50px;
