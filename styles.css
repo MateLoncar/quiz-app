@@ -117,3 +117,34 @@ li {
   width: 30px;
   height: 30px;
 }
+
+/* style for new questions */
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 500px;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  border-color: navy;
+}
+
+.form__input {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  gap: 5px;
+  border-color: navy;
+}
+
+.button {
+  align-self: center;
+  width: 170px;
+  color: navy;
+}
+
+.form__input--remaining {
+  align-self: flex-end;
+}

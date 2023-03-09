@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/dde8d757b1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="create-card.js" defer></script>
+    <title>Quiz</title>
+  </head>
+  <body data-js="body">
+    <header><h1>Mate's Quiz App</h1></header>
+
+    <main data-js="main">
+      <form>
+        <label for=""><h1>Create new card here!</h1></label>
+        <section class="form__input">
+          <label for="">Your question:</label>
+          <textarea
+            name="question"
+            id="question"
+            cols="30"
+            rows="5"
+            placeholder="Write your question..."
+            maxlength="150"
+            data-js="question"
+          ></textarea>
+          <p
+            class="form__input--remaining"
+            data-js="remaining-characters-question"
+            hidden
+          ></p>
+        </section>
+        <section class="form__input">
+          <label for="">Your answer:</label>
+          <textarea
+            name="answer"
+            id="answer"
+            cols="30"
+            rows="5"
+            placeholder="Write your answer..."
+            maxlength="150"
+            data-js="answer"
+          ></textarea>
+          <p
+            class="form__input--remaining"
+            data-js="remaining-characters-answer"
+            hidden
+          ></p>
+        </section>
+        <section class="form__input">
+          <label for="">Tags:</label>
+          <textarea
+            name="tags"
+            id="tags"
+            cols="25"
+            rows="1"
+            placeholder="Any fitting tags?"
+            maxlength="40"
+            data-js="tags"
+          ></textarea>
+          <p
+            class="form__input--remaining"
+            data-js="remaining-characters-tags"
+            hidden
+          ></p>
+        </section>
+        <section class="form__input">
+          <button class="button" type="submit" data-js="submit-button">
+            Submit your card
+          </button>
+        </section>
+      </form>
+    </main>
+
+    <footer class="footer-div">
+      <nav class="navbar-div">
+        <ul class="navbar-item-list">
+          <li>
+            <a href="index.html"
+              ><i class="navy-color fa-solid fa-2x fa-house current-page"></i
+            ></a>
+          </li>
+          <li>
+            <a href="bookmark.html"
+              ><i class="navy-color fa-solid fa-2x fa-bookmark"></i
+            ></a>
+          </li>
+          <li>
+            <a href="create-card.html">
+              <i class="navy-color fa-solid fa-2x fa-circle-plus"></i>
+            </a>
+          </li>
+          <li>
+            <a href="profile.html"
+              ><i class="navy-color fa-solid fa-2x fa-circle-user"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
